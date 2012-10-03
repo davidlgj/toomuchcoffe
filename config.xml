@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "se.burningbroccoli.toomuchcoffe"
+        version   = "0.1">
+
+
+    <name>Too Much Coffe</name>
+
+    <description>
+        Count how much coffe you drink
+    </description>
+
+    <author href="https://sharemyworld.se" email="andreas@sharemyworld.se">
+        Andreas Duchen
+    </author>
+    <author href="https://sharemyworld.se" email="lars@sharemyworld.se">
+        Lars Wallin
+    </author>
+    <author href="https://sharemyworld.se" email="ulf@sharemyworld.se">
+        Ulf Andersson
+    </author>
+    <author href="https://sharemyworld.se" email="david.jensen@sharemyworld.se">
+        David Jensen
+    </author>
+
+    <preference name="phonegap-version" value="2.0.0" />
+    
+    <preference name="orientation" value="portrait" />
+    
+    <preference name="target-device" value="universal" />
+    
+    <preference name="fullscreen" value="false" />
+    
+    <!-- iOS specific -->
+    <preference name="webviewbounce" value="false" />
+    
+    <preference name="prerendered-icon" value="false" />
+    
+    <preference name="stay-in-webview" value="false" />
+    
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    
+    <!-- Blackberry specific -->
+    <preference name="disable-cursor" value="false" />
+    
+    
+    <!-- Android specific -->
+    <!-- SDK version 7 = Android 2.1 -->
+    <preference name="android-minSdkVersion" value="7" />
+    
+    <preference name="android-installLocation" value="internalOnly" />
+    
+    <!-- Icon support -->
+    <icon src="img/icon/32_32.png" width="32" height="32" />
+    <icon src="img/icon/36_36.png" width="36" height="36" />
+    <icon src="img/icon/48_48.png" width="48" height="48" />
+    <icon src="img/icon/72_72.png" width="72" height="72" />
+    
+    <gap:splash src="splash.png" />
+    
+    <preference name="auto-hide-splash-screen" value="false" />
+    
+    <!-- Features -->
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    
+    
+    <access origin="http://sharemyworld.se" subdomains="true" />
+    <access origin="https://sharemyworld.se" subdomains="true" />
+    
+    <access origin="http://gstatic.com" subdomains="true" />
+    <access origin="https://gstatic.com" subdomains="true" />
+    
+    <access origin="http://googleapis.com" subdomains="true" />
+    <access origin="https://googleapis.com" subdomains="true" />
+        
+    <access origin="http://www.dropbox.com" browserOnly="true" />
+    <access origin="https://www.dropbox.com" browserOnly="true" />
+</widget>
