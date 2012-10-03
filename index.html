@@ -11,7 +11,7 @@
         <script src="js/app.js" type="text/javascript" language="javascript" charset="utf-8" ></script>
     </head>
     <body ng-controller="CoffeCtrl"> 
-        <div id="counter" ng-class="cupimage" ng-click="add()">
+        <div id="counter" ng-class="cupimage" tap="add()" hold="reset()">
             <h1 ng-show="count() > 15">{{ count() }}</h1>
         </div>
     </body>
