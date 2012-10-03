@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="sv" ng-app="app">
     <head>
-        <title>too much coffe</title>
         <meta charset="utf-8">
+        <title>too much coffe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <script src="js/angular.min.js" type="text/javascript" language="javascript" charset="utf-8" ></script>
+        <script src="js/quo.js" type="text/javascript" language="javascript" charset="utf-8" ></script>
         <script src="js/underscore-min.js" type="text/javascript" language="javascript" charset="utf-8" ></script>
+        <script src="js/angular.min.js" type="text/javascript" language="javascript" charset="utf-8" ></script>
         <script src="js/app.js" type="text/javascript" language="javascript" charset="utf-8" ></script>
-        
     </head>
     <body ng-controller="CoffeCtrl"> 
-        <div id="counter" ng-click="add()">
-            <h1>{{ count() }}</h1>
+        <div id="counter" ng-class="cupimage" ng-click="add()">
+            <h1 ng-show="count() > 15">{{ count() }}</h1>
         </div>
     </body>
 </html>

@@ -1,8 +1,97 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+body,html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
 }
 
-a {
-  color: #00B7FF;
+
+#counter {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;           /* Safari 3.0 */
+    -moz-background-size: contain;           /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: contain;           /* Opera 9.5 */
+    background-size: contain;  
 }
+
+#counter h1 {
+    color: #eee;
+    position: absolute;
+    bottom: 20px;
+    left: 2%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+.cup0 {
+    background-image: url('../img/coffecups/0.jpg');
+}
+
+.cup1 {
+    background-image: url('../img/coffecups/1.jpg');
+}
+
+.cup2 {
+    background-image: url('../img/coffecups/2.jpg');
+}
+
+.cup3 {
+    background-image: url('../img/coffecups/3.jpg');
+}
+
+.cup4 {
+    background-image: url('../img/coffecups/4.jpg');
+}
+
+.cup5 {
+    background-image: url('../img/coffecups/5.jpg');
+}
+
+.cup6 {
+    background-image: url('../img/coffecups/6.jpg');
+}
+
+.cup7 {
+    background-image: url('../img/coffecups/7.jpg');
+}
+
+.cup8 {
+    background-image: url('../img/coffecups/8.jpg');
+}
+
+.cup9 {
+    background-image: url('../img/coffecups/9.jpg');
+}
+
+.cup10 {
+    background-image: url('../img/coffecups/10.jpg');
+}
+
+.cup11 {
+    background-image: url('../img/coffecups/11.jpg');
+}
+
+.cup12 {
+    background-image: url('../img/coffecups/12.jpg');
+}
+
+.cup13 {
+    background-image: url('../img/coffecups/13.jpg');
+}
+
+.cup14 {
+    background-image: url('../img/coffecups/14.jpg');
+}
+
+.cup15 {
+    background-image: url('../img/coffecups/15.jpg');
+}
+
+

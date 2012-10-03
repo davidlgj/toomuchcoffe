@@ -65,7 +65,8 @@ angular.module('app').factory('coffe', ['storage',function(storage) {
         storage.set('dates',dates)
     }
     
-    
+    //debug
+    storage.set(today,[])
     
     /**
      * Cups of coffe today
@@ -115,11 +116,20 @@ angular.module('app').factory('coffe', ['storage',function(storage) {
  */ 
 function CoffeCtrl($scope,coffe) {
     
+    //preload all images
+    for (var i=0; i<16; i++) {
+        var img = new Image()
+        img.src = 'img/coffecups/'+i+'.jpg';
+    }
+    
     $scope.add = function() {
         coffe.add()
+        $scope.cupimage = 'cup'+ Math.min(15,$scope.count())
     }
     
     $scope.count = function(){
         return coffe.today()
     }
+    
+    $scope.cupimage = 'cup'+ Math.min(15,$scope.count())
 }
