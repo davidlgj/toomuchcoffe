@@ -1,18 +1,67 @@
 <!doctype html>
 <html lang="sv" ng-app="app">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <title>too much coffe</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link rel="stylesheet" href="css/style.css" type="text/css" />
         <script src="js/quo.js" type="text/javascript" language="javascript" charset="utf-8" ></script>
         <script src="js/underscore-min.js" type="text/javascript" language="javascript" charset="utf-8" ></script>
         <script src="js/angular.min.js" type="text/javascript" language="javascript" charset="utf-8" ></script>
         <script src="js/app.js" type="text/javascript" language="javascript" charset="utf-8" ></script>
     </head>
-    <body ng-controller="CoffeCtrl"> 
-        <div id="counter" ng-class="cupimage" tap="add()" hold="reset()">
+    <body ng-controller="CoffeCtrl" ng-switch="page">
+        <div ng-switch-when="counter" id="counter" ng-class="cupimage" tap="add()" hold="reset()">
+            <div class="button" tap="showStats()">
+                <span>stats</span>
+            </div>
             <h1 ng-show="count() > 15">{{ count() }}</h1>
+        </div>
+        <div ng-switch-when="stats">
+            <div class="button" tap="showCounter()">
+                <span>back</span>
+            </div>
+            <div id="stats" ng-controller="StatsCtrl">
+                <table>
+                    <thead>
+                        <tr><th colspan="2">Week {{ week }}</th></tr>
+                    </thead>
+                    <body>
+                        <tr>
+                            <td>monday</td>
+                            <td>{{ monday }}</td>
+                        </tr>
+                        <tr>
+                            <td>tuesday</td>
+                            <td>{{ tuesday }}</td>
+                        </tr>
+                        <tr>
+                            <td>wednesday</td>
+                            <td>{{ wednesday }}</td>
+                        </tr>
+                        <tr>
+                            <td>thursday</td>
+                            <td>{{ thursday }}</td>
+                        </tr>
+                        <tr>
+                            <td>friday</td>
+                            <td>{{ friday }}</td>
+                        </tr>
+                        <tr>
+                            <td>saturday</td>
+                            <td>{{ saturday }}</td>
+                        </tr>
+                        <tr>
+                            <td>sunday</td>
+                            <td>{{sunday}}</td>
+                        </tr>
+                        <tr class="navigation">
+                            <td tap="prev()">previous week</td>
+                            <td tap="next()">next week</td>
+                        </tr>
+                    <tbody>
+                </table>
+            </div>
         </div>
     </body>
 </html>
