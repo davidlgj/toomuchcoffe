@@ -46,10 +46,23 @@ body,html {
 }
 
 #stats table {
-    font-size: 60px;
-    margin-left: 44px;
-    font-family: 'dkcrayon'; 
+    font-size: 30px;
+    margin-left: 56px;
+    font-family: 'dkcrayon';
+    margin-top: 50px;
 }
+
+
+#stats table thead {
+    text-align: center;
+    color: #FFB0E1;
+}
+
+#stats table tbody .navigation {
+    color: #B1FFB0;
+}
+
+
 
 #stats table tr td:first-child {
     text-align: right;
